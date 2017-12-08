@@ -30,6 +30,7 @@
   "dependencies": {
     "babel-runtime": "^6.26.0",
     "command-line-args": "^4.0.7",
+    "command-line-commands": "^2.0.1",
     "command-line-usage": "^4.0.2"
   },
   "devDependencies": {
