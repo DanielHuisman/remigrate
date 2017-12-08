@@ -1,0 +1,2 @@
+# remigrate
+RethinkDB migrations
