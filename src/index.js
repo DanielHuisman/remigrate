@@ -56,6 +56,7 @@ switch (command) {
 
         // Exit after printing information
         process.exit(0);
+        break;
     }
 }
 
