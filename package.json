@@ -1,0 +1,47 @@
+{
+  "name": "remigrate",
+  "description": "RethinkDB migrations.",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Daniel Huisman <daniel@huisman.me> (https://danielhuisman.io)",
+  "repository": "https://github.com/DanielHuisman/remigrate.git",
+  "keywords": [
+    "rethinkdb",
+    "migrate",
+    "migrations"
+  ],
+  "main": "lib/index.js",
+  "bin": "./cli.js",
+  "files": [
+    "lib",
+    "cli.js",
+    "README.md",
+    "LICENSE.md",
+    "package.json"
+  ],
+  "scripts": {
+    "lint": "eslint --color src",
+    "clean": "rimraf lib",
+    "build": "yarn run clean && yarn run lint && yarn run build:babel",
+    "build:babel": "babel src --out-dir lib --source-maps --copy-files",
+    "start": "node cli.js",
+    "prepublish": "yarn run build"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "command-line-args": "^4.0.7",
+    "command-line-usage": "^4.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "eslint": "^4.10.0",
+    "eslint-config-google": "^0.9.1",
+    "eslint-plugin-babel": "^4.1.2",
+    "eslint-plugin-import": "^2.8.0"
+  }
+}

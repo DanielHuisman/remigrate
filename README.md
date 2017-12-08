@@ -1,2 +1,11 @@
 # remigrate
-RethinkDB migrations
+
+RethinkDB migrations.
+
+## Installation
+```bash
+yarn add @danielhuisman/remigrate
+```
+
+## Usage
+*TODO*
