@@ -86,8 +86,10 @@ export default async (command, options) => {
                     console.log('Database is currently at migration', versions[startIndex].key, versions[startIndex].name);
                 }
 
-                const count = startIndex === -1 ? versions.length : versions.length - startIndex - 1;
-                console.log(count.toString(), count === 1 ? 'migration' : 'migrations', 'can be executed');
+                const upCount = startIndex === -1 ? versions.length : versions.length - startIndex - 1;
+                const downCount = versions.length - upCount;
+                console.log(upCount.toString(), 'up', upCount === 1 ? 'migration' : 'migrations', 'can be executed');
+                console.log(downCount.toString(), 'down', downCount === 1 ? 'migration' : 'migrations', 'can be executed');
                 break;
             }
             case 'up': {
