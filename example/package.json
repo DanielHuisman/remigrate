@@ -1,0 +1,14 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "Basic remigrate example.",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "migrate": "babel-node ../cli.js -c config.js"
+  },
+  "dependencies": {
+    "rethinkdbdash": "^2.3.31"
+  }
+}
