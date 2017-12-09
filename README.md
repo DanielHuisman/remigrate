@@ -1,6 +1,6 @@
 # remigrate
 
-RethinkDB migrations.
+RethinkDB migrations, supports `rethinkdb` and `rethinkdbdash`.
 
 ## Installation
 ```bash
@@ -36,6 +36,9 @@ Options
 ```javascript
 {
     "name": "my-package",
+    "dependencies": {
+        "rethinkdb": "2"
+    },
     "devDependencies": {
         "@danielhuisman/remigrate": "1"
     },
@@ -72,6 +75,9 @@ Remigrate supports ES6 through `babel-node`. To enable this, change your `packag
     "name": "my-package",
     "scripts": {
         "migrate": "babel-node node_modules/.bin/remigrate -c src/config.js"
+    },
+    "dependencies": {
+        "rethinkdb": "2"
     },
     "devDependencies": {
         "@danielhuisman/remigrate": "1",

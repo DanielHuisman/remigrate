@@ -9,6 +9,7 @@
     "migrate": "babel-node ../cli.js -c config.js"
   },
   "dependencies": {
+    "rethinkdb": "^2.3.3",
     "rethinkdbdash": "^2.3.31"
   }
 }

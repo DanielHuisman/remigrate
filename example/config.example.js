@@ -9,6 +9,9 @@ export default {
     user: 'example',
     password: 'example'
 
+    // migrations: 'migrations-dash',
+    // template: 'es6-async',
+    //
     // driver: 'rethinkdbdash',
     // db: 'example',
     // user: 'example',
