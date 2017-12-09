@@ -7,7 +7,7 @@ export default {
     user: 'example',
     password: 'example',
     servers: [{
-        host: 'ssh.danielhuisman.io',
+        host: 'rethinkdb.example.com',
         port: 28015
     }]
 };
