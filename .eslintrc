@@ -43,6 +43,7 @@
         "babel/new-cap": 0,
         "babel/object-curly-spacing": 1,
         "babel/no-invalid-this": 1,
-        "import/order": 2
+        "import/order": 2,
+        "import/namespace": [2, {allowComputed: true}]
     }
 }
