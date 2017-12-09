@@ -1,5 +1,5 @@
 {
-  "name": "remigrate",
+  "name": "@danielhuisman/remigrate",
   "description": "RethinkDB migrations.",
   "version": "1.0.0",
   "license": "MIT",
@@ -14,6 +14,7 @@
   "bin": "./cli.js",
   "files": [
     "lib",
+    "templates",
     "cli.js",
     "README.md",
     "LICENSE.md",
