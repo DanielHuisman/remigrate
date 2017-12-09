@@ -24,6 +24,7 @@
     "clean": "rimraf lib",
     "build": "yarn run clean && yarn run lint && yarn run build:babel",
     "build:babel": "babel src --out-dir lib --source-maps --copy-files",
+    "watch": "yarn run clean && yarn run build:babel --watch",
     "start": "node cli.js",
     "prepublish": "yarn run build"
   },
@@ -31,7 +32,8 @@
     "babel-runtime": "^6.26.0",
     "command-line-args": "^4.0.7",
     "command-line-commands": "^2.0.1",
-    "command-line-usage": "^4.0.2"
+    "command-line-usage": "^4.0.2",
+    "mkdirp": "^0.5.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
@@ -43,6 +45,8 @@
     "eslint": "^4.10.0",
     "eslint-config-google": "^0.9.1",
     "eslint-plugin-babel": "^4.1.2",
-    "eslint-plugin-import": "^2.8.0"
+    "eslint-plugin-import": "^2.8.0",
+    "rethinkdb": "^2.3.3",
+    "rethinkdbdash": "^2.3.31"
   }
 }
