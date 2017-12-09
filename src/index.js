@@ -7,7 +7,7 @@ import migrate from './migrate';
 const pkg = require('../package.json');
 
 // Define command line commands
-const commandDefinitions = [null, 'help', 'version', 'create', 'up', 'down', 'down-all'];
+const commandDefinitions = [null, 'help', 'version', 'create', 'status', 'up', 'down', 'down-all'];
 
 // Define command line options
 const optionDefinitions = [{
@@ -33,6 +33,7 @@ const usageDefinition = [{
     header: 'Commands',
     content: [
         {name: 'create', summary: 'Create a new migration'},
+        {name: 'status', summary: 'Print the current migration'},
         {name: 'up', summary: 'Run all outstanding up migrations'},
         {name: 'down', summary: 'Run one down migration'},
         {name: 'down-all', summary: 'Run all down migrations'}

@@ -21,6 +21,10 @@ export default class Rethinkdbdash {
         }
     }
 
+    getArguments() {
+        return [this.r];
+    }
+
     getCurrentVersion = async () => {
         try {
             return await this.r.table(this.tableName).filter({key: 'version'}).run();

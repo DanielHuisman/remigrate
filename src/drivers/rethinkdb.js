@@ -13,6 +13,10 @@ export default class Rethinkdbdash {
         }
     }
 
+    getArguments() {
+        return [this.r, this.connection];
+    }
+
     getCurrentVersion = async () => {
         return null;
     }
