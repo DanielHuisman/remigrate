@@ -1,5 +1,7 @@
 # remigrate
 
+[![remigrate](https://img.shields.io/npm/v/@danielhuisman/remigrate.svg)](https://www.npmjs.com/package/@danielhuisman/remigrate)
+
 RethinkDB migrations, supports `rethinkdb` and `rethinkdbdash`.
 
 ## Installation
