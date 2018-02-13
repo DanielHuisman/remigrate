@@ -1,12 +1,12 @@
 # remigrate
 
-[![remigrate](https://img.shields.io/npm/v/@danielhuisman/remigrate.svg)](https://www.npmjs.com/package/@danielhuisman/remigrate)
+[![remigrate](https://img.shields.io/npm/v/remigrate.svg)](https://www.npmjs.com/package/remigrate)
 
 RethinkDB migrations, supports `rethinkdb` and `rethinkdbdash`.
 
 ## Installation
 ```bash
-yarn add @danielhuisman/remigrate
+yarn add remigrate
 ```
 
 ## Usage
@@ -42,7 +42,7 @@ Options
         "rethinkdb": "2"
     },
     "devDependencies": {
-        "@danielhuisman/remigrate": "1"
+        "remigrate": "1"
     },
     "scripts": {
         "migrate": "remigrate -c src/config.js"
@@ -82,7 +82,7 @@ Remigrate supports ES6 through `babel-node`. To enable this, change your `packag
         "rethinkdb": "2"
     },
     "devDependencies": {
-        "@danielhuisman/remigrate": "1",
+        "remigrate": "1",
         "babel-cli": "6",
         "babel-core": "6"
     }
