@@ -1,4 +1,4 @@
-export default class Rethinkdbdash {
+export default class Rethinkdb {
     constructor(tableName, options) {
         this.tableName = tableName;
         this.options = options;
