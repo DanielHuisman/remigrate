@@ -1,7 +1,7 @@
 {
   "name": "remigrate",
   "description": "RethinkDB migrations.",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "license": "MIT",
   "author": "Daniel Huisman <daniel@huisman.me> (https://danielhuisman.io)",
   "repository": "https://github.com/DanielHuisman/remigrate.git",
